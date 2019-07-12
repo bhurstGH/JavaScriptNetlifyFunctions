@@ -115,7 +115,7 @@ After authorizing and choosing your GitHub account, you should click "Configure 
 
 <img src="../images/02-deploy-confignetlify.png" width="50%" height="50%">
 
-Here, you will be able to choose whether you allow the Netlify app access to all of your repositories, or only the ones you specifically select. This choice is entire up to you. If you choose only select repositories, select your JavaScriptNetlifyFunctions repository from the drop down list. Click the "Install" button when you're finished:
+Here, you will be able to choose whether you allow the Netlify app to access to all of your repositories, or only the ones you specifically select. This choice is entirely up to you. If you choose only select repositories, select your JavaScriptNetlifyFunctions repository from the drop down list. Click the "Install" button when you're finished:
 
 <img src="../images/03-deploy-installnetlify.png" width="50%" height="50%">
 

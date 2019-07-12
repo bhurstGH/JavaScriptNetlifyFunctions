@@ -148,4 +148,4 @@ The "hard" part is over! If you aren't currently on your sites `Overview` page, 
 
 `https://[something-clever-netlify-made-for-you].netlify.com/.netlify/functions/helloWorld`
 
-You will see the "Hello, world!" that you returned in your function callback's body, and that's all their is to it.
+You will see the "Hello, world!" that you returned in your function callback's body, and that's all there is to it.

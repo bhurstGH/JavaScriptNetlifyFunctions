@@ -87,7 +87,7 @@ After logging in, you should be looking at your list of sites. If you have never
 
 You should now be presented with the "Create a new site" panel. Click the GitHub icon and you will be asked to authorize the Netlify application on GitHub and a series of other confirmations. Follow along with the images below:
 
-<img src="../images/01-deploy-authnetlify.png">
+<img src="../images/01-deploy-authnetlify.png" width="50%" height="50%">
 
 ![Configure Netlify app](../images/02-deploy-confignetlify.png)
 

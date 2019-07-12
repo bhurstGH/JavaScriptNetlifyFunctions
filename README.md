@@ -89,12 +89,21 @@ You should now be presented with the "Create a new site" panel. Click the GitHub
 
 <img src="../images/01-deploy-authnetlify.png" width="50%" height="50%">
 
+After authorizing and choosing your GitHub account, you should click "Configure Netlify on GitHub":
 <img src="../images/02-deploy-confignetlify.png" width="50%" height="50%">
 
+Here, you will be able to choose whether you allow the Netlify app access to all of your repositories, or only the ones you specifically select. This choice is entire up to you. If you choose only select repositories, select your JavaScriptNetlifyFunctions repository from the drop down list. Click the "Install" button when you're finished:
 <img src="../images/03-deploy-installnetlify.png" width="50%" height="50%">
 
+You will be taken back to Netlify and be able to choose repository. If you allowed access to all repositories, you may want to use the search bar to narrow it down. Otherwise, it should automatically show you the repository you chose:
 <img src="../images/04-deploy-chooserepo.png" width="50%" height="50%">
 
+The branch to deploy should already be set to `master`, but ensure that it is. This is the branch Netlify will watch for updates. It will automatically rebuild and deploy your site when you push changes here, so this is important. When you are ready, click "Deploy site." You're almost there:
 <img src="../images/05-deploy-masterbranch.png" width="50%" height="50%">
 
+When the site has finished the build and deploy process, you should see this:
 <img src="../images/06-deploy-published.png" width="50%" height="50%">
+
+Congratulations! You've now written and deployed a serverless function to Netlify.
+
+### Calling a function

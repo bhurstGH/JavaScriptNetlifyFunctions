@@ -2,11 +2,11 @@
 
 ## Purpose
 
-This is a simple guide to writing and deploying your first Netlify Function using JavaScript.
+This is a simple guide to writing and deploying your first Netlify Function using JavaScript and GitHub.
 
 Netlify makes it extremely easy to take advantage of AWS's serverless Lambda functions. They can currently be deployed with JavaScript and Go. If you're interested in the slightly more complicated Go side of this process, head here: [GolangNetlifyFunctions](https://github.com/phoenixcoder/GolangNetlifyFunctions).
 
-## Deploying functions...
+## Guide
 
 You will need both a Netlify and a GitHub account before you get started.
 
@@ -19,7 +19,7 @@ You will need both a Netlify and a GitHub account before you get started.
 1. Create a `netlify.toml` file in the root directory and copy the contents from the same file in this repository.
 1. Create a `/functions` folder.
 1. Create a `helloWorld.js` file in the `/functions` folder and copy it's contents from the same file in this repository.
-1. Skip to Deploying the project.
+1. Skip to Deploying the project's Quick Steps.
 
 #### Details
 
@@ -52,3 +52,29 @@ exports.handler = function (event, context, callback) {
     })
 }
 ```
+
+Now that the function actually does something, it will return a status code of 200 and "Hello, world!" when it is invoked by hitting this endpoint on your Netlify site:
+
+`https://[something-clever-netlify-made-for-you].netlify.com/.netlify/functions/[function-name]`
+
+Git commit and push your changes to GitHub and we're ready to deploy!
+
+#### Visual Checkpoint
+
+You should now have something similar to:
+Folder structure. Toml. helloWorld.
+
+### Deploying the project
+
+#### Quick steps:
+
+1. Sign up for (if necessary) and into Netlify. Signing up with your GitHub account eases things along.
+1. From your `Sites` page, click "New site from Git".
+1. Choose "GitHub" from the "Continuous Deployment" options.
+1. Authorize the Netlify GitHub application.
+1. Configuring the Netlify app.
+1. Choose whether to allow access to all of your repositories or only those you select.
+1. Allow the Netlify app to install.
+1. Choose your JavaScriptNetlifyFunctions repository.
+1. Ensure that "Branch to deploy" is set to `master` and click "Deploy site"
+1. Once "Production deploys" is labeled as `PUBLISHED`, your functions are deployed.

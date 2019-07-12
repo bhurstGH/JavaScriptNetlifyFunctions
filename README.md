@@ -89,12 +89,12 @@ You should now be presented with the "Create a new site" panel. Click the GitHub
 
 <img src="../images/01-deploy-authnetlify.png" width="50%" height="50%">
 
-![Configure Netlify app](../images/02-deploy-confignetlify.png)
+<img src="../images/02-deploy-confignetlify.png" width="50%" height="50%">
 
-![Install Netlify app](../images/03-deploy-installnetlify.png)
+<img src="../images/03-deploy-installnetlify.png" width="50%" height="50%">
 
-![Choose the repository](../images/04-deploy-chooserepo.png)
+<img src="../images/04-deploy-chooserepo.png" width="50%" height="50%">
 
-![Set deploy branch to master](../images/05-deploy-masterbranch.png)
+<img src="../images/05-deploy-masterbranch.png" width="50%" height="50%">
 
-![Set deploy branch to master](../images/06-deploy-published.png)
+<img src="../images/06-deploy-published.png" width="50%" height="50%">

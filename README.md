@@ -78,3 +78,23 @@ Folder structure. Toml. helloWorld.
 1. Choose your JavaScriptNetlifyFunctions repository.
 1. Ensure that "Branch to deploy" is set to `master` and click "Deploy site"
 1. Once "Production deploys" is labeled as `PUBLISHED`, your functions are deployed.
+
+### Details
+
+Sign up for a Netlify account if you haven't already and log in. It is convenient to do so by authenticating through your GitHub account.
+
+After logging in, you should be looking at your list of sites. If you have never deployed to Netlify before, it will probably be blank. You can fix that now by clicking the "New site from Git" button in the upper right.
+
+You should now be presented with the "Create a new site" panel. Click the GitHub icon and you will be asked to authorize the Netlify application on GitHub and a series of other confirmations. Follow along with the images below:
+
+![Authorize Netlify app](../images/01-deploy-authnetlify.png)
+
+![Configure Netlify app](../images/02-deploy-confignetlify.png)
+
+![Install Netlify app](../images/03-deploy-installnetlify.png)
+
+![Choose the repository](../images/04-deploy-chooserepo.png)
+
+![Set deploy branch to master](../images/05-deploy-masterbranch.png)
+
+![Set deploy branch to master](../images/06-deploy-published.png)

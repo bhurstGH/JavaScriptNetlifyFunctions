@@ -57,7 +57,7 @@ exports.handler = function (event, context, callback) {
 
 Now that the function actually does something, it will return a status code of 200 and "Hello, world!" when it is invoked by hitting this endpoint on your Netlify site:
 
-`https://[something-clever-netlify-made-for-you].netlify.com/.netlify/functions/[function-name]`
+`https://[something-clever-netlify-made-for-you].netlify.com/.netlify/functions/helloWorld`
 
 Git commit and push your changes to GitHub and we're ready to deploy!
 
@@ -89,27 +89,27 @@ After logging in, you should be looking at your list of sites. If you have never
 
 You should now be presented with the "Create a new site" panel. Click the GitHub icon and you will be asked to authorize the Netlify application on GitHub and a series of other confirmations. Follow along with the images below:
 
-- <img src="../images/01-deploy-authnetlify.png" width="50%" height="50%">
+<img src="../images/01-deploy-authnetlify.png" width="50%" height="50%">
 
 After authorizing and choosing your GitHub account, you should click "Configure Netlify on GitHub":
 
-- <img src="../images/02-deploy-confignetlify.png" width="50%" height="50%">
+<img src="../images/02-deploy-confignetlify.png" width="50%" height="50%">
 
 Here, you will be able to choose whether you allow the Netlify app access to all of your repositories, or only the ones you specifically select. This choice is entire up to you. If you choose only select repositories, select your JavaScriptNetlifyFunctions repository from the drop down list. Click the "Install" button when you're finished:
 
-- <img src="../images/03-deploy-installnetlify.png" width="50%" height="50%">
+<img src="../images/03-deploy-installnetlify.png" width="50%" height="50%">
 
 You will be taken back to Netlify and be able to choose repository. If you allowed access to all repositories, you may want to use the search bar to narrow it down. Otherwise, it should automatically show you the repository you chose:
 
-- <img src="../images/04-deploy-chooserepo.png" width="50%" height="50%">
+<img src="../images/04-deploy-chooserepo.png" width="50%" height="50%">
 
 The branch to deploy should already be set to `master`, but ensure that it is. This is the branch Netlify will watch for updates. It will automatically rebuild and deploy your site when you push changes here, so this is important. When you are ready, click "Deploy site." You're almost there:
 
-- <img src="../images/05-deploy-masterbranch.png" width="50%" height="50%">
+<img src="../images/05-deploy-masterbranch.png" width="50%" height="50%">
 
 When the site has finished the build and deploy process, you should see this:
 
-- <img src="../images/06-deploy-published.png" width="50%" height="50%">
+<img src="../images/06-deploy-published.png" width="50%" height="50%">
 
 Congratulations! You've now written and deployed a serverless function to Netlify.
 
@@ -117,4 +117,15 @@ Congratulations! You've now written and deployed a serverless function to Netlif
 
 #### Quick steps:
 
-1. 1. 1.
+1. From your site's Overview page, choose `Functions` from the navigation menu.
+1. Choose `helloWorld.js` from your list of functions.
+1. Copy and paste the `Endpoint` URL and paste it into a browser.
+1. Enjoy the fruits of your labor!
+
+#### Details
+
+The "hard" part is over! If you aren't currently on your sites `Overview` page, you can select it from your site list. Along the top navigation you can click `Functions` to see a list of your deployed serverless functions. This is only `helloWorld.js` right now, so click that. You will be presented with an `Endpoint` URL that you can use to invoke your function. Something close to:
+
+`https://[something-clever-netlify-made-for-you].netlify.com/.netlify/functions/helloWorld`
+
+You will see the "Hello, world!" that you returned in your function callback's body, and that's all their is to it.

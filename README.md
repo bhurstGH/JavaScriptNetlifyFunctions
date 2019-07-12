@@ -101,7 +101,7 @@ You should now have something similar to:
 
 - Skip to [Calling a function's Quick steps](#quick-steps-2)
 
-### Details
+#### Details
 
 Sign up for a Netlify account if you haven't already and log in. It is convenient to do so by authenticating through your GitHub account.
 

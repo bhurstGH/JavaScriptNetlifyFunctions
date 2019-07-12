@@ -18,7 +18,7 @@ Netlify makes it extremely easy to take advantage of AWS's serverless Lambda fun
   - [Deploying the project](#deploying-the-project)
     - [Quick steps](#quick-steps-1)
     - [Details](#details-1)
-  - [Calling avfunction](#calling-a-function)
+  - [Calling a function](#calling-a-function)
     - [Quick steps](#quick-steps-2)
     - [Details](#details-2)
 

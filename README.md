@@ -64,7 +64,9 @@ Git commit and push your changes to GitHub and we're ready to deploy!
 #### Visual Checkpoint
 
 You should now have something similar to:
-Folder structure. Toml. helloWorld.
+![](../images/01-create-folders.png)
+![](../images/02-create-netlify.png)
+![](../images/03-create-helloworld.png)
 
 ### Deploying the project
 

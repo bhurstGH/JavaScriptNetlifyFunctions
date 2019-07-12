@@ -70,7 +70,7 @@ exports.handler = function (event, context, callback) {
 }
 ```
 
-Now that the function actually does something, it will return a status code of 200 and "Hello, world!" when it is invoked by hitting this endpoint on your Netlify site:
+Now it will return a status code of 200 and "Hello, world!" when it is invoked by hitting this endpoint on your Netlify site:
 
 `https://[something-clever-netlify-made-for-you].netlify.com/.netlify/functions/helloWorld`
 

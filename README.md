@@ -6,7 +6,7 @@
 
 This is a simple guide to writing and deploying your first Netlify Function using JavaScript and GitHub.
 
-Netlify makes it extremely easy to take advantage of AWS's serverless Lambda functions. They can currently be deployed with JavaScript and Go. If you're interested in the slightly more complicated Go side of this process, head here: [GolangNetlifyFunctions](https://github.com/phoenixcoder/GolangNetlifyFunctions).
+Netlify makes it extremely easy to take advantage of AWS's serverless Lambda functions. They can currently be deployed with JavaScript and Go. If you're interested in the Go side of this process, head here: [GolangNetlifyFunctions](https://github.com/phoenixcoder/GolangNetlifyFunctions).
 
 ## Contents
 
@@ -70,7 +70,7 @@ exports.handler = function (event, context, callback) {
 }
 ```
 
-Now that the function actually does something, it will return a status code of 200 and "Hello, world!" when it is invoked by hitting this endpoint on your Netlify site:
+Now it will return a status code of 200 and "Hello, world!" when it is invoked by hitting this endpoint on your Netlify site:
 
 `https://[something-clever-netlify-made-for-you].netlify.com/.netlify/functions/helloWorld`
 
@@ -101,7 +101,7 @@ You should now have something similar to:
 
 - Skip to [Calling a function's Quick steps](#quick-steps-2)
 
-### Details
+#### Details
 
 Sign up for a Netlify account if you haven't already and log in. It is convenient to do so by authenticating through your GitHub account.
 
@@ -115,7 +115,7 @@ After authorizing and choosing your GitHub account, you should click "Configure 
 
 <img src="../images/02-deploy-confignetlify.png" width="50%" height="50%">
 
-Here, you will be able to choose whether you allow the Netlify app access to all of your repositories, or only the ones you specifically select. This choice is entire up to you. If you choose only select repositories, select your JavaScriptNetlifyFunctions repository from the drop down list. Click the "Install" button when you're finished:
+Here, you will be able to choose whether you allow the Netlify app to access to all of your repositories, or only the ones you specifically select. This choice is entirely up to you. If you choose only select repositories, select your JavaScriptNetlifyFunctions repository from the drop down list. Click the "Install" button when you're finished:
 
 <img src="../images/03-deploy-installnetlify.png" width="50%" height="50%">
 

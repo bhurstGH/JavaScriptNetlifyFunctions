@@ -23,7 +23,7 @@ Netlify makes it extremely easy to take advantage of AWS's serverless Lambda fun
     - [Details](#details-2)
 - [Additional Info](#additional-info)
   - [Multiple Functions](#multiple-functions)
-  - [Quick note on local testing](#quick-note-on-local-testing)
+  - [Quick note on local function testing](#quick-note-on-local-function-testing)
 
 ## Guide
 

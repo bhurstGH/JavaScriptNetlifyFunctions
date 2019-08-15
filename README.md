@@ -21,6 +21,9 @@ Netlify makes it extremely easy to take advantage of AWS's serverless Lambda fun
   - [Calling a function](#calling-a-function)
     - [Quick steps](#quick-steps-2)
     - [Details](#details-2)
+- [Additional Info](#additional-info)
+  - [Multiple Functions](#multiple-functions)
+  - [Quick note on local testing](#quick-note-on-local-testing)
 
 ## Guide
 
@@ -39,6 +42,10 @@ You will need both a Netlify and a GitHub account before you get started.
 - Skip to [Deploying the project's Quick steps](#quick-steps-1).
 
 #### Details
+
+<details>
+
+<summary>Click for more detailed instructions.</summary>
 
 Begin by creating a new GitHub repository, which you will eventually deploy. Feel free to name it JavaScriptNetlifyFunctions or anything else you would like. Once you have cloned the repository to your local machine, navigate to that directory and open it in your favorite editor. Assuming you are using VS Code, you can open the project folder by typing this in your terminal:
 
@@ -76,6 +83,8 @@ Now it will return a status code of 200 and "Hello, world!" when it is invoked b
 
 Git commit and push your changes to GitHub and we're ready to deploy!
 
+</details>
+
 #### Visual Checkpoint
 
 You should now have something similar to:
@@ -102,6 +111,10 @@ You should now have something similar to:
 - Skip to [Calling a function's Quick steps](#quick-steps-2)
 
 #### Details
+
+<details>
+
+<summary>Click for more detailed instructions.</summary>
 
 Sign up for a Netlify account if you haven't already and log in. It is convenient to do so by authenticating through your GitHub account.
 
@@ -133,6 +146,8 @@ When the site has finished the build and deploy process, you should see this:
 
 Congratulations! You've now written and deployed a serverless function to Netlify.
 
+</details>
+
 ### Calling a function
 
 #### Quick steps:
@@ -144,8 +159,36 @@ Congratulations! You've now written and deployed a serverless function to Netlif
 
 #### Details
 
-The "hard" part is over! If you aren't currently on your sites `Overview` page, you can select it from your site list. Along the top navigation you can click `Functions` to see a list of your deployed serverless functions. This is only `helloWorld.js` right now, so click that. You will be presented with an `Endpoint` URL that you can use to invoke your function. Something close to:
+The "hard" part is over! If you aren't currently on your site's `Overview` page, you can select it from your site list. Along the top navigation you can click `Functions` to see a list of your deployed serverless functions. This is only `helloWorld.js` right now, so click that. You will be presented with an `Endpoint` URL that you can use to invoke your function. Something close to:
 
 `https://[something-clever-netlify-made-for-you].netlify.com/.netlify/functions/helloWorld`
 
 You will see the "Hello, world!" that you returned in your function callback's body, and that's all there is to it.
+
+## Additional Info
+
+### Multiple Functions
+
+Adding multiple functions to your Netlify deployment is as simple as dropping them in your functions folder. This repository provides a `goodbyeWorld.js` companion to the `helloWorld.js` function we walked through earlier, for instance:
+
+`https://[something-clever-netlify-made-for-you].netlify.com/.netlify/functions/goodbyeWorld`
+
+###  Quick note on local function testing
+
+Netlify provides a useful command line tool which you can install globally on your system from the terminal:
+
+`npm install -i netlify-cli`
+
+While the Netlify CLI contains many tools, we will only be concerned with one in this document:
+
+`netlify dev`
+
+When typing this command in your project folder, Netlify will launch a server on `localhost:8888`, allowing you to test your serverless functions without deploying them first:
+
+`http://localhost:8888/.netlify/functions/helloWorld`
+`http://localhost:8888/.netlify/functions/goodbyeWorld`
+
+[You can read more about the Netlify CLI here](cli.netlify.com)
+
+_Note that this is only confirmed to work with serverless JavaScript functions. Golang functions require a build step that may require more setup or further development from the Netlify team._
+
